@@ -1,123 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Weightlifting Program with Percentage-based Training">
-    <title>Weightlifting Training Program</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3-Month Weightlifting Program</title>
+  <style>
+    /* General Styles */
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      font-family: 'Arial', sans-serif;
+      background-color: #1a1a1a;
+      color: #f5f5f5;
       margin: 0;
       padding: 0;
+      line-height: 1.6;
     }
-    header {
-      background-color: #333;
-      color: white;
+
+    h1, h2, h3 {
+      color: #ff6f61;
+    }
+
+    a {
+      color: #ff6f61;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
       padding: 20px;
-      text-align: center;
     }
-    h1 {
-      font-size: 2.5em;
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
       margin: 0;
     }
-    section {
-      padding: 30px;
-      max-width: 1200px;
-      margin: auto;
-      background-color: white;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      margin-top: 30px;
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
     }
-    h2 {
-      color: #333;
+
+    /* Sections */
+    .section {
+      background-color: #2a2a2a;
+      border-radius: 10px;
+      margin: 20px 0;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
-    ul {
-      list-style: none;
-      padding-left: 0;
+
+    .section h2 {
+      margin-top: 0;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    li {
-      background: #eee;
+
+    .section h2::after {
+      content: "▼";
+      font-size: 1.2rem;
+      transition: transform 0.3s;
+    }
+
+    .section.collapsed h2::after {
+      transform: rotate(-90deg);
+    }
+
+    .section.collapsed .content {
+      display: none;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
       margin: 10px 0;
+    }
+
+    th, td {
       padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #444;
+    }
+
+    th {
+      background-color: #333;
+      color: #ff6f61;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      background-color: #ff6f61;
+      color: #1a1a1a;
+      padding: 10px 20px;
       border-radius: 5px;
+      text-align: center;
+      margin: 10px 0;
+      cursor: pointer;
     }
-    .highlight {
-      font-weight: bold;
-      color: #007BFF;
+
+    .btn:hover {
+      background-color: #ff4a3d;
     }
-    .note {
-      font-style: italic;
-      color: #888;
-    }
+
+    /* Footer */
     footer {
       text-align: center;
-      background-color: #333;
-      color: white;
-      padding: 10px;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
+      padding: 20px;
+      color: #ccc;
     }
-    </style>
-  </head>
-  <body>
-
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
     <header>
-      <h1>Weightlifting Training Program</h1>
-      <p>Day 1: Front Squat Focus</p>
+      <h1>3-Month Weightlifting Program</h1>
+      <p>Designed to increase snatch, clean & jerk, and squat performance.</p>
     </header>
 
-    <section>
-      <h2>Today's Training Plan (Percentage-Based)</h2>
-      <p>This program is based on modern weightlifting protocols, using **percentage-based training** to ensure consistent progress through progressive overload.</p>
+    <!-- Program Overview -->
+    <div class="section">
+      <h2>Program Overview</h2>
+      <div class="content">
+        <p><strong>Goals:</strong> Increase snatch (70 → 85+ kg), clean & jerk (85 → 100+ kg), back squat (120 → 140+ kg), front squat (105 → 120+ kg).</p>
+        <p><strong>Frequency:</strong> 5 days/week, 90–120 mins/session.</p>
+        <p><strong>Focus:</strong> Strength, technique, and injury prevention.</p>
+      </div>
+    </div>
 
-      <h3>1. Warm-up</h3>
-      <ul>
-	<li>5–10 minutes of light cardio (rower, treadmill, or cycling) to get the heart rate up.</li>
-	<li>Dynamic stretches for the legs and hips, such as leg swings, hip openers, and lunges.</li>
-      </ul>
+    <!-- Weekly Breakdown -->
+    <div class="section">
+      <h2>Weekly Breakdown</h2>
+      <div class="content">
+        <table>
+          <thead>
+            <tr>
+              <th>Phase</th>
+              <th>Weeks</th>
+              <th>Focus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Technique & Hypertrophy</td>
+              <td>1–4</td>
+              <td>Build muscle, improve mobility, refine technique.</td>
+            </tr>
+            <tr>
+              <td>Strength</td>
+              <td>5–8</td>
+              <td>Increase absolute strength and power.</td>
+            </tr>
+            <tr>
+              <td>Peaking</td>
+              <td>9–12</td>
+              <td>Maximize 1PM and test new limits.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
 
-      <h3>2. Main Lift: Front Squat</h3>
-      <p>The front squat is a key movement that builds strength and stability in the legs and core. In this session, we'll use a percentage of your **1RM (One-Rep Max)** for the sets.</p>
+    <!-- Daily Workouts -->
+    <div class="section">
+      <h2>Daily Workouts</h2>
+      <div class="content">
+        <h3>Day 1: Snatch + Back Squat</h3>
+        <ul>
+          <li>Snatch Complex: 4x3 @ 70–75%.</li>
+          <li>Back Squat: 5x5 @ 75–80%.</li>
+          <li>Accessories: Snatch-grip RDL, Plank.</li>
+        </ul>
 
-      <h4>Progressive Overload Protocol for Front Squats</h4>
-      <ul>
-	<li>Work up to a working set of <span class="highlight">5 reps</span> at **80%** of your 1RM. For example, if your 1RM is 100kg, you'll be lifting 80kg for your working sets.</li>
-	<li>Perform 4 sets of 5 reps at this weight. Rest 3–5 minutes between sets for full recovery.</li>
-	<li>Every 3–4 weeks, attempt to increase the working weight by 2.5–5kg (5–10lbs) based on your progress.</li>
-      </ul>
+        <h3>Day 2: Clean & Jerk + Pulling</h3>
+        <ul>
+          <li>Clean & Jerk Complex: 4x3 @ 75–80%.</li>
+          <li>Deadlift: 4x5 @ 70–75%.</li>
+          <li>Accessories: Bent-over rows, Side planks.</li>
+        </ul>
 
-      <h3>3. Secondary Lift: Deadlift (Volume-based)</h3>
-      <p>Next, we'll move to the deadlift, focusing on volume and maintaining strength while keeping the load manageable.</p>
-      <ul>
-	<li>3 sets of <span class="highlight">8 reps</span> at **70%** of your 1RM.</li>
-	<li>Rest 3–4 minutes between sets. Focus on perfect form, especially with the lower back.</li>
-      </ul>
+        <h3>Day 3: Front Squat + Core/Mobility</h3>
+        <ul>
+          <li>Front Squat: 5x5 @ 75–80%.</li>
+          <li>Core Circuit: Hanging leg raises, Pallof press.</li>
+          <li>Mobility: Ankle drills, Thoracic rotations.</li>
+        </ul>
 
-      <h3>4. Accessory Lifts (Additional Leg Strength and Stability)</h3>
-      <p>Now, we’ll focus on accessory lifts that help balance out the main lifts, targeting stability and muscle development.</p>
-      <ul>
-	<li><span class="highlight">Bulgarian Split Squats</span> - 3 sets of 8–12 reps per leg (no percentage, use bodyweight or moderate weight)</li>
-	<li><span class="highlight">Barbell Hip Thrusts</span> - 3 sets of 8 reps at **60–70%** of your 1RM (use moderate weight)</li>
-	<li><span class="highlight">Core Work (Planks or Russian Twists)</span> - 3 sets of 30 seconds to 1 minute for planks, 15–20 reps per side for Russian twists</li>
-      </ul>
+        <h3>Day 4: Power Lifts + Hypertrophy</h3>
+        <ul>
+          <li>Power Snatch: 4x3 @ 60–65%.</li>
+          <li>Power Clean & Jerk: 4x3 @ 65–70%.</li>
+          <li>RDL: 4x8 @ 60–70%.</li>
+        </ul>
 
-      <h3>5. Cool Down</h3>
-      <ul>
-	<li>Stretch your quads, hamstrings, and hip flexors.</li>
-	<li>Use a foam roller to release tension in your quads and glutes.</li>
-	<li>Perform deep breathing exercises to help bring your heart rate down and relax your muscles.</li>
-      </ul>
+        <h3>Day 5: Heavy Lifts + Overhead Work</h3>
+        <ul>
+          <li>Heavy Singles: Snatch, Clean & Jerk.</li>
+          <li>Overhead Squat: 3x3 @ 50–60%.</li>
+          <li>Strict Press: 4x5 @ 70–75%.</li>
+        </ul>
+      </div>
+    </div>
 
-      <p class="note">Remember, each week you should aim to increase your lifting weight slightly (depending on progress and form). Be consistent and ensure you're getting adequate rest and nutrition to support your gains!</p>
-    </section>
-
+    <!-- Footer -->
     <footer>
-      <p>Created with ❤️ by Your Weightlifting Program</p>
+      <p>Created with ❤️ by Your Coach | Deploy on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
     </footer>
+  </div>
 
-  </body>
+  <!-- JavaScript for Collapsible Sections -->
+  <script>
+    document.querySelectorAll('.section h2').forEach(header => {
+      header.addEventListener('click', () => {
+        const section = header.parentElement;
+        section.classList.toggle('collapsed');
+      });
+    });
+  </script>
+</body>
 </html>
