@@ -1,308 +1,449 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>3-Month Weightlifting Program</title>
-  <style>
-    /* General Styles */
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #1a1a1a;
-      color: #f5f5f5;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
+<html>
+  <body>
+    <h1>3-Month Olympic Weightlifting Program</h1>
 
-    h1, h2, h3 {
-      color: #ff6f61;
-    }
+    <h2>Goals</h2>
 
-    a {
-      color: #ff6f61;
-      text-decoration: none;
-    }
+    <ul>
+      <li>Increase snatch (70 @ 85+ kg)</li>
+      <li>Increase clean &amp; jerk (85 @ 100+ kg)</li>
+      <li>Increase back squat (120 @ 140+ kg)</li>
+      <li>Increase front squat (105 @ 120+ kg)</li>
+    </ul>
 
-    a:hover {
-      text-decoration: underline;
-    }
 
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
+    <h2>Focus</h2>
 
-    /* Header */
-    header {
-      text-align: center;
-      padding: 20px 0;
-    }
+    <ul>
+      <li>Strength, technique, and injury prevention (lower back pain)</li>
+    </ul>
 
-    header h1 {
-      font-size: 2.5rem;
-      margin: 0;
-    }
 
-    header p {
-      font-size: 1.2rem;
-      color: #ccc;
-    }
+    <h2>Frequency</h2>
 
-    /* Sections */
-    .section {
-      background-color: #2a2a2a;
-      border-radius: 10px;
-      margin: 20px 0;
-      padding: 20px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
+    <ul>
+      <li>5 days/week, 90@120 mins/session</li>
+    </ul>
 
-    .section h2 {
-      margin-top: 0;
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
 
-    .section h2::after {
-      content: "▼";
-      font-size: 1.2rem;
-      transition: transform 0.3s;
-    }
+    <hr />
 
-    .section.collapsed h2::after {
-      transform: rotate(-90deg);
-    }
+    <h2>Program Structure</h2>
 
-    .section.collapsed .content {
-      display: none;
-    }
+    <table>
+      <thead>
+	<tr>
+	  <th> <strong>Day</strong>       </th>
+	  <th> <strong>Focus</strong>                     </th>
+	  <th> <strong>Key Exercises</strong>                          </th>
+	</tr>
+      </thead>
+      <tbody>
+	<tr>
+	  <td> <strong>Day 1</strong>     </td>
+	  <td> Snatch Technique + Squats     </td>
+	  <td> Snatch complexes, Back Squat               </td>
+	</tr>
+	<tr>
+	  <td> <strong>Day 2</strong>     </td>
+	  <td> Clean &amp; Jerk + Pulling        </td>
+	  <td> Clean &amp; Jerk complexes, Deadlift/Pulls     </td>
+	</tr>
+	<tr>
+	  <td> <strong>Day 3</strong>     </td>
+	  <td> Front Squat + Accessories     </td>
+	  <td> Front Squat, Core, Mobility                </td>
+	</tr>
+	<tr>
+	  <td> <strong>Day 4</strong>     </td>
+	  <td> Power Lifts + Hypertrophy     </td>
+	  <td> Power Snatch/C&amp;J, RDLs, Pull-ups           </td>
+	</tr>
+	<tr>
+	  <td> <strong>Day 5</strong>     </td>
+	  <td> Heavy Lifts + Overhead Work   </td>
+	  <td> Heavy Singles, Overhead Squat, Strict Press</td>
+	</tr>
+	<tr>
+	  <td> <strong>Day 6/7</strong>   </td>
+	  <td> Active Recovery               </td>
+	  <td> Light cardio, stretching, mobility         </td>
+	</tr>
+      </tbody>
+    </table>
 
-    /* Tables */
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 10px 0;
-    }
 
-    th, td {
-      padding: 10px;
-      text-align: left;
-      border-bottom: 1px solid #444;
-    }
+    <hr />
 
-    th {
-      background-color: #333;
-      color: #ff6f61;
-    }
+    <h2>Weekly Breakdown</h2>
 
-    /* Buttons */
-    .btn {
-      display: inline-block;
-      background-color: #ff6f61;
-      color: #1a1a1a;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-align: center;
-      margin: 10px 0;
-      cursor: pointer;
-    }
+    <h3><strong>Phase 1: Technique &amp; Hypertrophy (Weeks 1@4)</strong></h3>
 
-    .btn:hover {
-      background-color: #ff4a3d;
-    }
+    <p><strong>Goal:</strong> Build muscle, improve mobility, and refine technique.<br/>
+    - <strong>Snatch/C&amp;J:</strong> 70-75% of 1PM, 4@5 sets of 3@4 reps.<br/>
+    - <strong>Squats:</strong> 75-80% of 1PM, 5x5.<br/>
+    - <strong>Accessories:</strong> 3@4 sets of 8@12 reps.</p>
 
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #ccc;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <!-- Header -->
-    <header>
-      <h1>3-Month Weightlifting Program</h1>
-      <p>Designed to increase snatch, clean & jerk, and squat performance.</p>
-    </header>
+    <hr />
 
-    <!-- Program Overview -->
-    <div class="section">
-      <h2>Program Overview</h2>
-      <div class="content">
-        <p><strong>Goals:</strong> Increase snatch (70 → 85+ kg), clean & jerk (85 → 100+ kg), back squat (120 → 140+ kg), front squat (105 → 120+ kg).</p>
-        <p><strong>Frequency:</strong> 5 days/week, 90–120 mins/session.</p>
-        <p><strong>Focus:</strong> Strength, technique, and injury prevention.</p>
-      </div>
-    </div>
+    <h3><strong>Phase 2: Strength (Weeks 5@8)</strong></h3>
 
-    <!-- Weekly Breakdown -->
-    <div class="section">
-      <h2>Weekly Breakdown</h2>
-      <div class="content">
-        <table>
-          <thead>
-            <tr>
-              <th>Phase</th>
-              <th>Weeks</th>
-              <th>Focus</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Technique & Hypertrophy</td>
-              <td>1–4</td>
-              <td>Build muscle, improve mobility, refine technique.</td>
-            </tr>
-            <tr>
-              <td>Strength</td>
-              <td>5–8</td>
-              <td>Increase absolute strength and power.</td>
-            </tr>
-            <tr>
-              <td>Peaking</td>
-              <td>9–12</td>
-              <td>Maximize 1PM and test new limits.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+    <p><strong>Goal:</strong> Increase absolute strength and power.<br/>
+    - <strong>Snatch/C&amp;J:</strong> 80-85% of 1PM, 3@4 sets of 2@3 reps.<br/>
+    - <strong>Squats:</strong> 85-90% of 1PM, 4x4.<br/>
+    - <strong>Accessories:</strong> 3@4 sets of 6@8 reps.</p>
 
-    <!-- Daily Workouts -->
-    <div class="section">
-      <h2>Daily Workouts</h2>
-      <div class="content">
-        <h3>Day 1: Snatch + Back Squat</h3>
-        <ul>
-	  <li>Warm Up (15 mins):
-	    <ul>
-	      <li>Banded glute bridges</li>
-	      <li>Cat-cow stretches</li>
-	      <li>Overhead squats with PVC pipe.</li>
-	    </ul>
-	  </li>
-	  <li>Snatch Complex: 70–75% <br>
-	    4x3
-	    <ul>
-	      <li>Muscle snatch</li>
-	      <li>Hang snatch </li>
-	      <li>OHS</li>
-	    </ul>
-	    3x3
-	    <ul>
-	      <li>Snatch pull</li>
-	      <li>Snatch</li>
-	    </ul>
-	  </li>
-          <li>Back Squat: 5x5 @ 75–80%.</li>
-          <li>Accessories
-	    <ul>
-	      <li>Snatch-grip RDL: 3x8</li>
-	      <li>Plank with shoulder taps: 3x45sec</li>
-	    </ul>
-	  </li>
-        </ul>
+    <hr />
 
-        <h3>Day 2: Clean & Jerk + Pulling</h3>
+    <h3><strong>Phase 3: Peaking (Weeks 9@12)</strong></h3>
+
+    <p><strong>Goal:</strong> Maximize 1PM and test new limits.<br/>
+    - <strong>Snatch/C&amp;J:</strong> 90-95% of 1PM, 2@3 sets of 1@2 reps.<br/>
+    - <strong>Squats:</strong> 90-95% of 1PM, 3x3.<br/>
+    - <strong>Deload Week (Week 12):</strong> Reduce volume by 40%.</p>
+
+    <hr />
+
+    <h2>Day 1: Snatch + Back Squat</h2>
+
+    <h3><strong>Warm-Up (15@20 minutes)</strong></h3>
+
+    <p><strong>Goal:</strong> Mobilize hips/shoulders, prime snatch mechanics.</p>
+
+    <h4><strong>1. General Cardio (5 minutes)</strong></h4>
+
+    <ul>
+      <li>Jump rope or rowing machine @ elevate heart rate.</li>
+    </ul>
+
+
+    <h4><strong>2. Dynamic Stretching</strong></h4>
+
+    <ul>
+      <li><strong>Leg Swings</strong>: 10 front/back + 10 side-to-side per leg.</li>
+      <li><strong>Arm Circles</strong>: 10 forward + 10 backward.</li>
+      <li><strong>PVC Overhead Squats</strong>: 2-8 reps @ improve thoracic mobility.</li>
+    </ul>
+
+
+    <h4><strong>3. Movement-Specific Drills</strong></h4>
+
+    <ul>
+      <li><strong>PVC Snatch Balances</strong>: 2-5 reps @ practice speed under the bar.</li>
+      <li><strong>Snatch-Grip Romanian Deadlifts (RDLs)</strong>: 2-8 reps (empty barbell).</li>
+    </ul>
+
+
+    <h4><strong>4. Activation Work</strong></h4>
+
+    <ul>
+      <li><strong>Banded Glute Bridges</strong>: 2-15 reps @ activate glutes.</li>
+      <li><strong>Scapular Wall Slides</strong>: 2-10 reps @ warm up shoulders.</li>
+    </ul>
+
+
+    <hr />
+
+    <h3><strong>Snatch Complex (70@75%)</strong></h3>
+
+    <ul>
+      <li>Muscle snatch + hang snatch + OHS: 4x3.</li>
+      <li>Snatch pull + snatch: 3x3.</li>
+    </ul>
+
+
+    <h3><strong>Back Squat</strong></h3>
+
+    <ul>
+      <li>5x5 @ 75@80% (120kg @ 95@100kg).</li>
+    </ul>
+
+
+    <h3><strong>Accessories</strong></h3>
+
+    <ul>
+      <li>Snatch-grip RDL: 3x8.</li>
+      <li>Plank with shoulder taps: 3x45 sec.</li>
+    </ul>
+
+
+    <hr />
+
+    <h2>Day 2: Clean &amp; Jerk + Pulling</h2>
+
+    <h3><strong>Warm-Up (15@20 minutes)</strong></h3>
+
+    <p><strong>Goal:</strong> Activate posterior chain, prep for explosive pulls.</p>
+
+    <h4><strong>1. General Cardio (5 minutes)</strong></h4>
+
+    <ul>
+      <li>Air bike or brisk walk.</li>
+    </ul>
+
+
+    <h4><strong>2. Dynamic Stretching</strong></h4>
+
+    <ul>
+      <li><strong>Hip Opener Stretch</strong>: 10 reps/side (lunge with rotation).</li>
+      <li><strong>Kettlebell Halos</strong>: 10 reps/side (shoulder mobility).</li>
+      <li><strong>Cat-Cow Stretch</strong>: 2-10 reps.</li>
+    </ul>
+
+
+    <h4><strong>3. Movement-Specific Drills</strong></h4>
+
+    <ul>
+      <li><strong>Clean Pulls (Empty Barbell)</strong>: 2-5 reps @ focus on triple extension.</li>
+      <li><strong>Front Rack Stretch</strong>: 2-30 seconds (use PVC or barbell).</li>
+    </ul>
+
+
+    <h4><strong>4. Activation Work</strong></h4>
+
+    <ul>
+      <li><strong>Banded Deadbugs</strong>: 2-10 reps/side @ core stability.</li>
+      <li><strong>Bird-Dog</strong>: 2-10 reps/side @ spinal alignment.</li>
+    </ul>
+
+
+    <hr />
+
+    <h3><strong>Clean &amp; Jerk Complex (75@80%)</strong></h3>
+
+    <ul>
+      <li>Clean pull + power clean + jerk: 4x3.</li>
+      <li>Front squat + jerk: 3x3.</li>
+    </ul>
+
+
+    <h3><strong>Deadlift (Conventional or Snatch-grip)</strong></h3>
+
+    <ul>
+      <li>4x5 @ 70@75% (140kg).</li>
+    </ul>
+
+
+    <h3><strong>Accessories</strong></h3>
+
+    <ul>
+      <li>Bent-over rows: 4x8.</li>
+      <li>Side planks: 3x30 sec/side.</li>
+    </ul>
+
+
+    <hr />
+
+    <h2>Day 3: Front Squat + Core/Mobility</h2>
+
+    <h3><strong>Warm-Up (15 minutes)</strong></h3>
+
+    <ul>
+      <li><strong>Dynamic Stretching</strong>:
+
 	<ul>
-	  <li>
-	    Warm-Up
-	    <ul>
-	      <li>Kettlebell halos</li>
-	      <li>Legs swings</li>
-	      <li>Light clean pulls</li>
-	    </ul>
-	  </li>
-	  <li>
-	    Clean & Jerk Complex: 75–80%.
-	    <ul>
-	      <li>
-		4x3
-		<ul>
-		  <li>Clean pull</li>
-		  <li>Power clean</li>
-		  <li>Jerk</li>
-		</ul>
-	      </li>
-	      <li>
-		3x3
-		<ul>
-		  <li>Front squat</li>
-		  <li>Jerk</li>
-		</ul>
-	      </li>
-	    </ul>
-	  </li>
-	  <li>
-	    Deadlift 4x5 @ 70-75% (110 - 120kg)
-	  </li>
-	  <li>
-	    Accessory work:
-	    <ul>
-	      <li>Bent-over rows 4x8</li>
-	      <li>Side planks 3x30 sec/side</li>
-	    </ul>
-	  </li>
-        </ul>
+	  <li>Leg swings (front/back and side-to-side) @ 10 reps per leg.</li>
+	  <li>Bodyweight squats @ 2-15 reps.</li>
+	  <li>Banded glute bridges @ 2-15 reps.</li>
+	</ul>
+      </li>
+      <li><strong>Mobility Prep</strong>:
 
-        <h3>Day 3: Front Squat + Core/Mobility</h3>
-        <ul>
-	  <li>
-	    Front Squat 75-80% (105kg -> 80 - 85kg)
-	  </li>
-          <li>
-	    Core Circuit
-	    <ul>
-	      <li>Hanging leg raises: 10 reps.</li>
-	      <li>Pallof press: 10/side.</li>
-	      <li>Bird-dog: 12/side.</li>
-	    </ul>
-	  </li>
-          <li>
-	    Mobility
-	    <ul>
-	      <li>Ankle dorsiflexion drills with band.</li>
-              <li>Thoracic spine rotations.</li>
-	    </ul>
-	  </li>
-        </ul>
+	<ul>
+	  <li>Front rack stretches with PVC pipe @ 2-30 seconds.</li>
+	  <li>Thoracic spine rotations on all fours @ 10 reps/side.</li>
+	</ul>
+      </li>
+      <li><strong>Light Front Squats</strong>:
 
-        <h3>Day 4: Power Lifts + Hypertrophy</h3>
-        <ul>
-          <li>Power Snatch: 4x3 @ 60–65%.</li>
-          <li>Power Clean & Jerk: 4x3 @ 65–70%.</li>
-          <li>RDL: 4x8 @ 60–70%.</li>
-        </ul>
+	<ul>
+	  <li>Empty barbell @ 2-8 reps.</li>
+	</ul>
+      </li>
+    </ul>
 
-        <h3>Day 5: Heavy Lifts + Overhead Work</h3>
-        <ul>
-          <li>Heavy Singles: Snatch, Clean & Jerk.</li>
-          <li>Overhead Squat: 3x3 @ 50–60%.</li>
-          <li>Strict Press: 4x5 @ 70–75%.</li>
-        </ul>
-      </div>
-    </div>
 
-    <!-- Footer -->
-    <footer>
-      <p>Created with ❤️ by Your Coach | Deploy on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
-    </footer>
-  </div>
+    <h3><strong>Front Squat</strong></h3>
 
-  <!-- JavaScript for Collapsible Sections -->
-  <script>
-    document.querySelectorAll('.section h2').forEach(header => {
-      header.addEventListener('click', () => {
-        const section = header.parentElement;
-        section.classList.toggle('collapsed');
-      });
-    });
-  </script>
-</body>
+    <ul>
+      <li>5x5 @ 75@80% (105kg @ 80@85kg).</li>
+    </ul>
+
+
+    <h3><strong>Core Circuit (3 rounds)</strong></h3>
+
+    <ul>
+      <li>Hanging leg raises: 10 reps.</li>
+      <li>Pallof press: 10/side.</li>
+      <li>Bird-dog: 12/side.</li>
+    </ul>
+
+
+    <h3><strong>Mobility</strong></h3>
+
+    <ul>
+      <li>Ankle dorsiflexion drills with band.</li>
+      <li>Thoracic spine rotations.</li>
+    </ul>
+
+
+    <hr />
+
+    <h2>Day 4: Power Lifts + Hypertrophy</h2>
+
+    <h3><strong>Warm-Up (15@20 minutes)</strong></h3>
+
+    <ul>
+      <li><strong>General Cardio</strong>: Jump rope/rowing (5 mins).</li>
+      <li><strong>Dynamic Stretching</strong>:
+
+	<ul>
+	  <li>Arm circles (10 forward/backward).</li>
+	  <li>Leg swings (10 front/back + side-to-side).</li>
+	  <li>Cat-cow stretch (2-10 reps).</li>
+	</ul>
+      </li>
+      <li><strong>Movement-Specific Drills</strong>:
+
+	<ul>
+	  <li>PVC power snatch practice @ 2-5 reps.</li>
+	  <li>Empty barbell power clean &amp; jerk @ 2-5 reps.</li>
+	  <li>Light RDLs (40@50kg) @ 2-8 reps.</li>
+	</ul>
+      </li>
+      <li><strong>Activation Work</strong>:
+
+	<ul>
+	  <li>Banded pull-aparts @ 2-15 reps.</li>
+	  <li>Glute bridges @ 2-15 reps.</li>
+	  <li>Scapular pull-ups @ 2-10 reps.</li>
+	</ul>
+      </li>
+    </ul>
+
+
+    <h3><strong>Power Snatch</strong></h3>
+
+    <ul>
+      <li>4x3 @ 60@65% (45@50kg).</li>
+    </ul>
+
+
+    <h3><strong>Power Clean &amp; Jerk</strong></h3>
+
+    <ul>
+      <li>4x3 @ 65@70% (55@60kg).</li>
+    </ul>
+
+
+    <h3><strong>Romanian Deadlift (RDL)</strong></h3>
+
+    <ul>
+      <li>4x8 @ 60@70% (100kg).</li>
+    </ul>
+
+
+    <h3><strong>Pull-ups</strong></h3>
+
+    <ul>
+      <li>4x8 (add weight if possible).</li>
+    </ul>
+
+
+    <hr />
+
+    <h2>Day 5: Heavy Lifts + Overhead Work</h2>
+
+    <h3><strong>Warm-Up (20 minutes)</strong></h3>
+
+    <p><strong>Goal:</strong> Prime CNS, stabilize shoulders, and prep for heavy loads.</p>
+
+    <h4><strong>1. General Cardio (5 minutes)</strong></h4>
+
+    <ul>
+      <li>Rowing machine or light jog.</li>
+    </ul>
+
+
+    <h4><strong>2. Dynamic Stretching</strong></h4>
+
+    <ul>
+      <li><strong>Shoulder Dislocates (PVC)</strong>: 10 reps @ improve shoulder mobility.</li>
+      <li><strong>Lateral Lunges</strong>: 10 reps/side @ activate adductors.</li>
+      <li><strong>Bear Crawls</strong>: 1 minute @ full-body activation.</li>
+    </ul>
+
+
+    <h4><strong>3. Movement-Specific Drills</strong></h4>
+
+    <ul>
+      <li><strong>Overhead Squats (PVC)</strong>: 2-5 reps @ reinforce overhead stability.</li>
+      <li><strong>Strict Press (Empty Barbell)</strong>: 2-8 reps @ warm up delts.</li>
+    </ul>
+
+
+    <h4><strong>4. Activation Work</strong></h4>
+
+    <ul>
+      <li><strong>Face Pulls (Band)</strong>: 2-15 reps @ rear delt activation.</li>
+      <li><strong>Deadbugs</strong>: 2-10 reps/side @ core bracing.</li>
+    </ul>
+
+
+    <hr />
+
+    <h3><strong>Heavy Singles</strong></h3>
+
+    <ul>
+      <li>Snatch: 85@90% (60@65kg) @ 2-3 attempts.</li>
+      <li>Clean &amp; Jerk: 90@95% (75@80kg) @ 2-3 attempts.</li>
+    </ul>
+
+
+    <h3><strong>Overhead Squat</strong></h3>
+
+    <ul>
+      <li>3x3 @ 50@60% (35@40kg).</li>
+    </ul>
+
+
+    <h3><strong>Strict Press</strong></h3>
+
+    <ul>
+      <li>4x5 @ 70@75% (50kg).</li>
+    </ul>
+
+
+    <hr />
+
+    <h2>Key Adjustments for Lower Back Pain</h2>
+
+    <ul>
+      <li>Avoid rounded-back deadlifts. Use snatch-grip pulls or trap bar deadlifts.</li>
+      <li>Add <strong>McGill Big 3</strong> daily (curl-ups, side planks, bird-dog).</li>
+      <li>Post-training: Ice/heat therapy + 10 mins glute/hamstring stretching.</li>
+    </ul>
+
+
+    <hr />
+
+    <h2>Nutrition &amp; Recovery</h2>
+
+    <ul>
+      <li><strong>Calories</strong>: 3,000@3,300/day (1.8@2g protein/kg).</li>
+      <li><strong>Sleep</strong>: 8+ hours/night.</li>
+      <li><strong>Supplements</strong>: Creatine (5g/day), Omega-3s, magnesium.</li>
+    </ul>
+
+
+    <hr />
+
+    <h2>Progress Tracking</h2>
+
+    <ul>
+      <li>Test 1PM every 4 weeks.</li>
+      <li>Log workouts (weights, reps, pain levels).</li>
+    </ul>
+  </body>
 </html>
